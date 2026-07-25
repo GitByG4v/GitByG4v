@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/hud-card.svg" width="100%" alt="Gavaskar Augmented Reality HUD"/>
+<img src="./assets/hud_card.svg" width="100%" alt="Gavaskar Augmented Reality HUD"/>
 
 <br><br>
 
