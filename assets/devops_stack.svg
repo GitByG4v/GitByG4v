@@ -1,0 +1,183 @@
+<svg width="214" height="260" viewBox="0 0 214 260" xmlns="http://www.w3.org/2000/svg">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap');
+    
+    .widget-bg {
+      fill: #ffffff;
+      stroke: #eef5f6;
+      stroke-width: 1.5;
+    }
+    .widget-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 11.5px;
+      fill: #204349;
+      letter-spacing: 0.5px;
+    }
+    .widget-subtitle {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 500;
+      font-size: 8.5px;
+      fill: #608085;
+    }
+    .metric-value {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 26px;
+      fill: #1b3b40;
+    }
+    .metric-label {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 600;
+      font-size: 9px;
+      fill: #608085;
+    }
+    .stack-label {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 9px;
+      fill: #204349;
+    }
+
+    /* Animations */
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.05); opacity: 1; }
+    }
+    .pulsing-dot {
+      animation: pulse 2s infinite ease-in-out;
+      transform-origin: center;
+    }
+
+    @keyframes pulseGrid {
+      0%, 100% { opacity: 0.75; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.15); }
+    }
+
+    @keyframes floatToast {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+    .floating-toast {
+      animation: floatToast 5s ease-in-out infinite;
+    }
+
+    @keyframes drawPath {
+      from { stroke-dashoffset: 500; }
+      to { stroke-dashoffset: 0; }
+    }
+    .chart-line-1 {
+      stroke-dasharray: 500;
+      stroke-dashoffset: 500;
+      animation: drawPath 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    .chart-line-2 {
+      stroke-dasharray: 500;
+      stroke-dashoffset: 500;
+      animation: drawPath 2.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+
+    @keyframes fadeInFill {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .chart-fill {
+      opacity: 0;
+      animation: fadeInFill 1.5s ease-out 0.8s forwards;
+    }
+
+    @keyframes drawCircleGauge {
+      from { stroke-dashoffset: 213.6; }
+    }
+    .gauge-fill-followers {
+      stroke-dasharray: 213.6;
+      stroke-dashoffset: 185.8; /* 13% fill */
+      animation: drawCircleGauge 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    .gauge-fill-repos {
+      stroke-dasharray: 213.6;
+      stroke-dashoffset: 120.0; /* 44% fill */
+      animation: drawCircleGauge 1.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    .gauge-fill-acceptance {
+      stroke-dasharray: 326.7;
+      stroke-dashoffset: 29.4; /* 91% fill */
+      animation: drawCircleGauge 1.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+  </style>
+    <rect x="0" y="0" width="214" height="260" rx="16" class="widget-bg" />
+    <text x="16" y="26" class="widget-title">DevOps &amp; Cloud</text>
+    <text x="16" y="40" class="widget-subtitle">CI/CD, deployment &amp; sysops</text>
+
+    <!-- Docker -->
+    <g transform="translate(16, 60)">
+      <rect x="-6" y="-3" width="4" height="3" fill="#2496ed" />
+      <rect x="-1" y="-3" width="4" height="3" fill="#2496ed" />
+      <rect x="4" y="-3" width="4" height="3" fill="#2496ed" />
+      <path d="M-8,1 C-4,5 4,5 8,1 L10,-2" fill="none" stroke="#2496ed" stroke-width="1.8" />
+      <text x="24" y="4" class="stack-label">Docker</text>
+      <rect x="80" y="-3" width="100" height="6" rx="3" fill="#eef5f6" />
+      <rect x="80" y="-3" width="80" height="6" rx="3" fill="#2496ed">
+        <animate attributeName="width" from="0" to="80" dur="1.2s" fill="freeze" />
+      </rect>
+    </g>
+
+    <!-- AWS -->
+    <g transform="translate(16, 92)">
+      <path d="M-6,-2 Q0,6 6,-2" fill="none" stroke="#ff9900" stroke-width="2.2" stroke-linecap="round" />
+      <polygon points="4,2 8,-2 8,4" fill="#ff9900" />
+      <text x="24" y="4" class="stack-label">AWS Cloud</text>
+      <rect x="80" y="-3" width="100" height="6" rx="3" fill="#eef5f6" />
+      <rect x="80" y="-3" width="65" height="6" rx="3" fill="#ff9900">
+        <animate attributeName="width" from="0" to="65" dur="1.2s" fill="freeze" />
+      </rect>
+    </g>
+
+    <!-- GitHub Actions -->
+    <g transform="translate(16, 124)">
+      <circle cx="-1" cy="-1" r="5" fill="none" stroke="#2088ff" stroke-width="1.8" />
+      <line x1="-1" y1="-1" x2="3" y2="3" stroke="#2088ff" stroke-width="1.8" />
+      <circle cx="3" cy="3" r="1.5" fill="#2088ff" />
+      <text x="24" y="4" class="stack-label">Actions CI</text>
+      <rect x="80" y="-3" width="100" height="6" rx="3" fill="#eef5f6" />
+      <rect x="80" y="-3" width="80" height="6" rx="3" fill="#2088ff">
+        <animate attributeName="width" from="0" to="80" dur="1.2s" fill="freeze" />
+      </rect>
+    </g>
+
+    <!-- Git -->
+    <g transform="translate(16, 156)">
+      <rect x="-5" y="-5" width="10" height="10" rx="1.5" fill="none" stroke="#f05032" stroke-width="1.8" transform="rotate(45)" />
+      <circle cx="-2" cy="0" r="1.2" fill="#f05032" />
+      <circle cx="2" cy="-2" r="1.2" fill="#f05032" />
+      <line x1="-2" y1="0" x2="2" y2="-2" stroke="#f05032" stroke-width="1.2" />
+      <text x="24" y="4" class="stack-label">Git SCM</text>
+      <rect x="80" y="-3" width="100" height="6" rx="3" fill="#eef5f6" />
+      <rect x="80" y="-3" width="90" height="6" rx="3" fill="#f05032">
+        <animate attributeName="width" from="0" to="90" dur="1.2s" fill="freeze" />
+      </rect>
+    </g>
+
+    <!-- Linux -->
+    <g transform="translate(16, 188)">
+      <!-- Linux server minimal visual -->
+      <rect x="-6" y="-6" width="12" height="10" rx="1" fill="#333333" />
+      <rect x="-4" y="-4" width="8" height="6" fill="#00ff00" opacity="0.3" />
+      <text x="24" y="4" class="stack-label">Linux Server</text>
+      <rect x="80" y="-3" width="100" height="6" rx="3" fill="#eef5f6" />
+      <rect x="80" y="-3" width="85" height="6" rx="3" fill="#333333">
+        <animate attributeName="width" from="0" to="85" dur="1.2s" fill="freeze" />
+      </rect>
+    </g>
+
+    <!-- Firebase -->
+    <g transform="translate(16, 220)">
+      <polygon points="0,-7 -7,1 0,5 7,1" fill="#ffca28" />
+      <polygon points="-7,1 0,-3 0,5" fill="#ffa000" />
+      <text x="24" y="4" class="stack-label">Firebase</text>
+      <rect x="80" y="-3" width="100" height="6" rx="3" fill="#eef5f6" />
+      <rect x="80" y="-3" width="70" height="6" rx="3" fill="#ffa000">
+        <animate attributeName="width" from="0" to="70" dur="1.2s" fill="freeze" />
+      </rect>
+    </g>
+  </svg>

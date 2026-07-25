@@ -1,0 +1,156 @@
+<svg width="440" height="190" viewBox="0 0 440 190" xmlns="http://www.w3.org/2000/svg">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap');
+    
+    .widget-bg {
+      fill: #ffffff;
+      stroke: #eef5f6;
+      stroke-width: 1.5;
+    }
+    .widget-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 11.5px;
+      fill: #204349;
+      letter-spacing: 0.5px;
+    }
+    .widget-subtitle {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 500;
+      font-size: 8.5px;
+      fill: #608085;
+    }
+    .metric-value {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 26px;
+      fill: #1b3b40;
+    }
+    .metric-label {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 600;
+      font-size: 9px;
+      fill: #608085;
+    }
+    .stack-label {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 9px;
+      fill: #204349;
+    }
+
+    /* Animations */
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.05); opacity: 1; }
+    }
+    .pulsing-dot {
+      animation: pulse 2s infinite ease-in-out;
+      transform-origin: center;
+    }
+
+    @keyframes pulseGrid {
+      0%, 100% { opacity: 0.75; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.15); }
+    }
+
+    @keyframes floatToast {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+    .floating-toast {
+      animation: floatToast 5s ease-in-out infinite;
+    }
+
+    @keyframes drawPath {
+      from { stroke-dashoffset: 500; }
+      to { stroke-dashoffset: 0; }
+    }
+    .chart-line-1 {
+      stroke-dasharray: 500;
+      stroke-dashoffset: 500;
+      animation: drawPath 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    .chart-line-2 {
+      stroke-dasharray: 500;
+      stroke-dashoffset: 500;
+      animation: drawPath 2.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+
+    @keyframes fadeInFill {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .chart-fill {
+      opacity: 0;
+      animation: fadeInFill 1.5s ease-out 0.8s forwards;
+    }
+
+    @keyframes drawCircleGauge {
+      from { stroke-dashoffset: 213.6; }
+    }
+    .gauge-fill-followers {
+      stroke-dasharray: 213.6;
+      stroke-dashoffset: 185.8; /* 13% fill */
+      animation: drawCircleGauge 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    .gauge-fill-repos {
+      stroke-dasharray: 213.6;
+      stroke-dashoffset: 120.0; /* 44% fill */
+      animation: drawCircleGauge 1.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    .gauge-fill-acceptance {
+      stroke-dasharray: 326.7;
+      stroke-dashoffset: 29.4; /* 91% fill */
+      animation: drawCircleGauge 1.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+  </style>
+    <rect x="0" y="0" width="440" height="190" rx="16" class="widget-bg" />
+    <text x="20" y="26" class="widget-title">Activity Trend Graph</text>
+    <text x="20" y="40" class="widget-subtitle">Repository stars vs Issue completions</text>
+
+    <!-- Legend -->
+    <g transform="translate(260, 20)" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="700" fill="#608085">
+      <circle cx="0" cy="4" r="3" fill="#0a8c99" />
+      <text x="8" y="7">Stars</text>
+      
+      <circle cx="65" cy="4" r="3" fill="#9ece6a" />
+      <text x="73" y="7">Issues</text>
+    </g>
+
+    <!-- Axes grid lines -->
+    <g transform="translate(30, 60)" stroke="#eef4f5" stroke-width="1">
+      <line x1="0" y1="0" x2="380" y2="0" />
+      <line x1="0" y1="30" x2="380" y2="30" />
+      <line x1="0" y1="60" x2="380" y2="60" />
+      <line x1="0" y1="90" x2="380" y2="90" />
+      <line x1="0" y1="90" x2="380" y2="90" stroke="#b0cacc" stroke-width="1.5" />
+    </g>
+
+    <!-- Labels Y-Axis -->
+    <g transform="translate(22, 63)" font-family="'Outfit', sans-serif" font-size="7.5" font-weight="700" fill="#90a8ab" text-anchor="end">
+      <text y="0">100</text>
+      <text y="30">50</text>
+      <text y="60">25</text>
+      <text y="90">0</text>
+    </g>
+
+    <!-- Chart lines paths -->
+    <g transform="translate(30, 60)">
+      <!-- Line 1: Stars -->
+      <path d="M 0,90 Q 60,65 120,75 T 240,40 T 360,10 L 380,15 L 380,90 Z" fill="url(#starsLineGrad)" class="chart-fill" />
+      <path d="M 0,90 Q 60,65 120,75 T 240,40 T 360,10 L 380,15" fill="none" stroke="#0a8c99" stroke-width="2.5" stroke-linecap="round" class="chart-line-1" />
+      <circle cx="240" cy="40" r="3" fill="#0a8c99" />
+      <circle cx="240" cy="40" r="1.5" fill="#ffffff" />
+      <circle cx="360" cy="10" r="3" fill="#0a8c99" />
+      <circle cx="360" cy="10" r="1.5" fill="#ffffff" />
+
+      <!-- Line 2: Issue Closures -->
+      <path d="M 0,80 Q 70,85 140,55 T 280,68 T 380,30 L 380,90 Z" fill="url(#issuesLineGrad)" class="chart-fill" />
+      <path d="M 0,80 Q 70,85 140,55 T 280,68 T 380,30" fill="none" stroke="#9ece6a" stroke-width="2" stroke-linecap="round" class="chart-line-2" />
+      <circle cx="140" cy="55" r="3" fill="#9ece6a" />
+      <circle cx="140" cy="55" r="1.5" fill="#ffffff" />
+      <circle cx="380" cy="30" r="3" fill="#9ece6a" />
+      <circle cx="380" cy="30" r="1.5" fill="#ffffff" />
+    </g>
+  </svg>

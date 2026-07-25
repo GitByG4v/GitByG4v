@@ -1,0 +1,189 @@
+<svg width="440" height="162" viewBox="0 0 440 162" xmlns="http://www.w3.org/2000/svg">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap');
+    
+    .widget-bg {
+      fill: #ffffff;
+      stroke: #eef5f6;
+      stroke-width: 1.5;
+    }
+    .widget-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 11.5px;
+      fill: #204349;
+      letter-spacing: 0.5px;
+    }
+    .widget-subtitle {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 500;
+      font-size: 8.5px;
+      fill: #608085;
+    }
+    .metric-value {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 26px;
+      fill: #1b3b40;
+    }
+    .metric-label {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 600;
+      font-size: 9px;
+      fill: #608085;
+    }
+    .stack-label {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 9px;
+      fill: #204349;
+    }
+
+    /* Animations */
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.05); opacity: 1; }
+    }
+    .pulsing-dot {
+      animation: pulse 2s infinite ease-in-out;
+      transform-origin: center;
+    }
+
+    @keyframes pulseGrid {
+      0%, 100% { opacity: 0.75; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.15); }
+    }
+
+    @keyframes floatToast {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+    .floating-toast {
+      animation: floatToast 5s ease-in-out infinite;
+    }
+
+    @keyframes drawPath {
+      from { stroke-dashoffset: 500; }
+      to { stroke-dashoffset: 0; }
+    }
+    .chart-line-1 {
+      stroke-dasharray: 500;
+      stroke-dashoffset: 500;
+      animation: drawPath 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    .chart-line-2 {
+      stroke-dasharray: 500;
+      stroke-dashoffset: 500;
+      animation: drawPath 2.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+
+    @keyframes fadeInFill {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .chart-fill {
+      opacity: 0;
+      animation: fadeInFill 1.5s ease-out 0.8s forwards;
+    }
+
+    @keyframes drawCircleGauge {
+      from { stroke-dashoffset: 213.6; }
+    }
+    .gauge-fill-followers {
+      stroke-dasharray: 213.6;
+      stroke-dashoffset: 185.8; /* 13% fill */
+      animation: drawCircleGauge 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    .gauge-fill-repos {
+      stroke-dasharray: 213.6;
+      stroke-dashoffset: 120.0; /* 44% fill */
+      animation: drawCircleGauge 1.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    .gauge-fill-acceptance {
+      stroke-dasharray: 326.7;
+      stroke-dashoffset: 29.4; /* 91% fill */
+      animation: drawCircleGauge 1.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+  </style>
+    <rect x="0" y="0" width="440" height="162" rx="16" class="widget-bg" />
+    <text x="16" y="24" class="widget-title">Velocity Score</text>
+    <text x="16" y="38" class="widget-subtitle">Tasks resolved per day weekly workload</text>
+
+    <!-- Weekly bar chart columns -->
+    <g transform="translate(20, 52)">
+      <!-- Sun -->
+      
+      <rect x="10" y="20" width="8" height="60" rx="1.5" fill="#2ca58d">
+        <animate attributeName="height" from="0" to="60" begin="0s" dur="1.2s" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1" fill="freeze" />
+        <animate attributeName="y" from="80" to="20" begin="0s" dur="1.2s" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1" fill="freeze" />
+      </rect>
+    
+      
+      <rect x="20" y="45" width="8" height="35" rx="1.5" fill="#e2ede2">
+        <animate attributeName="height" from="0" to="35" begin="0.05s" dur="1.2s" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1" fill="freeze" />
+        <animate attributeName="y" from="80" to="45" begin="0.05s" dur="1.2s" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1" fill="freeze" />
+      </rect>
+    
+      <text x="19" y="92" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="7.5" fill="#608085" text-anchor="middle">Sun</text>
+
+      <!-- Wed -->
+      
+      <rect x="55" y="10" width="8" height="70" rx="1.5" fill="#2ca58d">
+        <animate attributeName="height" from="0" to="70" begin="0.1s" dur="1.2s" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1" fill="freeze" />
+        <animate attributeName="y" from="80" to="10" begin="0.1s" dur="1.2s" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1" fill="freeze" />
+      </rect>
+    
+      
+      <rect x="65" y="30" width="8" height="50" rx="1.5" fill="#e2ede2">
+        <animate attributeName="height" from="0" to="50" begin="0.15s" dur="1.2s" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1" fill="freeze" />
+        <animate attributeName="y" from="80" to="30" begin="0.15s" dur="1.2s" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1" fill="freeze" />
+      </rect>
+    
+      <text x="64" y="92" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="7.5" fill="#608085" text-anchor="middle">Wed</text>
+
+      <!-- Tue -->
+      
+      <rect x="100" y="28" width="8" height="52" rx="1.5" fill="#2ca58d">
+        <animate attributeName="height" from="0" to="52" begin="0.2s" dur="1.2s" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1" fill="freeze" />
+        <animate attributeName="y" from="80" to="28" begin="0.2s" dur="1.2s" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1" fill="freeze" />
+      </rect>
+    
+      
+      <rect x="110" y="40" width="8" height="40" rx="1.5" fill="#e2ede2">
+        <animate attributeName="height" from="0" to="40" begin="0.25s" dur="1.2s" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1" fill="freeze" />
+        <animate attributeName="y" from="80" to="40" begin="0.25s" dur="1.2s" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1" fill="freeze" />
+      </rect>
+    
+      <text x="109" y="92" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="7.5" fill="#608085" text-anchor="middle">Tue</text>
+    </g>
+
+    <!-- FLOATING TOAST BADGES (Embedded inside velocity widget to match original visual overlay layout style) -->
+    <g class="floating-toast">
+      <g transform="translate(180, 20)" filter="url(#toastShadow)">
+        <rect x="0" y="0" width="234" height="110" rx="14" fill="#ffffff" stroke="#eef5f6" stroke-width="1.2" />
+        <path d="M 0,8 A 8,8 0 0 1 8,0 L 30,0 L 30,110 L 8,110 A 8,8 0 0 1 0,102 Z" fill="#0a8c99" opacity="0.05" />
+        <rect x="0" y="20" width="2.5" height="70" rx="1" fill="#0a8c99" />
+        <g transform="translate(212, 10)" stroke="#90a8ab" stroke-width="1.2" stroke-linecap="round" fill="none">
+          <line x1="0" y1="0" x2="6" y2="6" />
+          <line x1="6" y1="0" x2="0" y2="6" />
+        </g>
+        <text x="16" y="22" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="9.5" fill="#1b3b40">Achievement Unlocked</text>
+        <circle cx="132" cy="18" r="2" fill="#f5cb5c" class="pulsing-dot" />
+
+        <g transform="translate(16, 32)">
+          <g transform="translate(0, 4)">
+            <rect x="0" y="0" width="105" height="20" rx="10" fill="#0a8c99" />
+            <circle cx="10" cy="10" r="7" fill="#ffffff" opacity="0.2" />
+            <circle cx="10" cy="10" r="4" fill="#ffffff" />
+            <text x="22" y="13" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="8" fill="#ffffff">Octo-Champion</text>
+          </g>
+          <g transform="translate(0, 30)">
+            <rect x="0" y="0" width="80" height="20" rx="10" fill="#2ca58d" />
+            <circle cx="10" cy="10" r="7" fill="#ffffff" opacity="0.2" />
+            <circle cx="10" cy="10" r="4" fill="#ffffff" />
+            <text x="22" y="13" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="8" fill="#ffffff">PR Ninja</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>

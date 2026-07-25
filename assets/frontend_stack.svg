@@ -1,0 +1,197 @@
+<svg width="214" height="260" viewBox="0 0 214 260" xmlns="http://www.w3.org/2000/svg">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap');
+    
+    .widget-bg {
+      fill: #ffffff;
+      stroke: #eef5f6;
+      stroke-width: 1.5;
+    }
+    .widget-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 11.5px;
+      fill: #204349;
+      letter-spacing: 0.5px;
+    }
+    .widget-subtitle {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 500;
+      font-size: 8.5px;
+      fill: #608085;
+    }
+    .metric-value {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 26px;
+      fill: #1b3b40;
+    }
+    .metric-label {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 600;
+      font-size: 9px;
+      fill: #608085;
+    }
+    .stack-label {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 9px;
+      fill: #204349;
+    }
+
+    /* Animations */
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.05); opacity: 1; }
+    }
+    .pulsing-dot {
+      animation: pulse 2s infinite ease-in-out;
+      transform-origin: center;
+    }
+
+    @keyframes pulseGrid {
+      0%, 100% { opacity: 0.75; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.15); }
+    }
+
+    @keyframes floatToast {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+    .floating-toast {
+      animation: floatToast 5s ease-in-out infinite;
+    }
+
+    @keyframes drawPath {
+      from { stroke-dashoffset: 500; }
+      to { stroke-dashoffset: 0; }
+    }
+    .chart-line-1 {
+      stroke-dasharray: 500;
+      stroke-dashoffset: 500;
+      animation: drawPath 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    .chart-line-2 {
+      stroke-dasharray: 500;
+      stroke-dashoffset: 500;
+      animation: drawPath 2.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+
+    @keyframes fadeInFill {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .chart-fill {
+      opacity: 0;
+      animation: fadeInFill 1.5s ease-out 0.8s forwards;
+    }
+
+    @keyframes drawCircleGauge {
+      from { stroke-dashoffset: 213.6; }
+    }
+    .gauge-fill-followers {
+      stroke-dasharray: 213.6;
+      stroke-dashoffset: 185.8; /* 13% fill */
+      animation: drawCircleGauge 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    .gauge-fill-repos {
+      stroke-dasharray: 213.6;
+      stroke-dashoffset: 120.0; /* 44% fill */
+      animation: drawCircleGauge 1.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    .gauge-fill-acceptance {
+      stroke-dasharray: 326.7;
+      stroke-dashoffset: 29.4; /* 91% fill */
+      animation: drawCircleGauge 1.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+  </style>
+    <rect x="0" y="0" width="214" height="260" rx="16" class="widget-bg" />
+    <text x="16" y="26" class="widget-title">Frontend Stack</text>
+    <text x="16" y="40" class="widget-subtitle">Core UI/UX frameworks &amp; tools</text>
+
+    <!-- React -->
+    <g transform="translate(16, 60)">
+      <!-- React Logo SVG Path -->
+      <g transform="scale(0.85)">
+        <ellipse rx="11" ry="4.2" fill="none" stroke="#61dafb" stroke-width="1.2" transform="rotate(30)" />
+        <ellipse rx="11" ry="4.2" fill="none" stroke="#61dafb" stroke-width="1.2" transform="rotate(90)" />
+        <ellipse rx="11" ry="4.2" fill="none" stroke="#61dafb" stroke-width="1.2" transform="rotate(150)" />
+        <circle r="2.2" fill="#61dafb" />
+      </g>
+      <text x="24" y="4" class="stack-label">React.js</text>
+      <!-- Skill progress track & bar -->
+      <rect x="80" y="-3" width="100" height="6" rx="3" fill="#eef5f6" />
+      <rect x="80" y="-3" width="85" height="6" rx="3" fill="#61dafb">
+        <animate attributeName="width" from="0" to="85" dur="1.2s" fill="freeze" />
+      </rect>
+    </g>
+
+    <!-- Vue.js -->
+    <g transform="translate(16, 92)">
+      <!-- Vue Logo SVG Path -->
+      <g transform="translate(0, -3) scale(0.65)">
+        <polygon points="0,0 15,0 7.5,13" fill="#41b883" />
+        <polygon points="3.5,0 11.5,0 7.5,7" fill="#35495e" />
+        <polygon points="6,0 9,0 7.5,2.6" fill="#ffffff" />
+      </g>
+      <text x="24" y="4" class="stack-label">Vue.js</text>
+      <rect x="80" y="-3" width="100" height="6" rx="3" fill="#eef5f6" />
+      <rect x="80" y="-3" width="60" height="6" rx="3" fill="#41b883">
+        <animate attributeName="width" from="0" to="60" dur="1.2s" fill="freeze" />
+      </rect>
+    </g>
+
+    <!-- Figma -->
+    <g transform="translate(16, 124)">
+      <!-- Figma Logo SVG Path -->
+      <g transform="translate(-4, -6) scale(0.7)">
+        <path d="M8,4a4,4,0,0,0-4,4,4,4,0,0,0,4,4h4V4Z" fill="#f24e1e" />
+        <path d="M12,4h4a4,4,0,0,0-4-4Z" fill="#ff7262" />
+        <path d="M12,12H8a4,4,0,0,0,4,4Z" fill="#1abc9c" />
+        <path d="M12,12h4a4,4,0,0,0-4-4Z" fill="#a259ff" />
+        <path d="M8,16a4,4,0,0,0,4,4,4,4,0,0,0,4-4H8Z" fill="#19bc9b" />
+        <circle cx="8" cy="18" r="2" fill="#0acf83" />
+      </g>
+      <text x="24" y="4" class="stack-label">Figma</text>
+      <rect x="80" y="-3" width="100" height="6" rx="3" fill="#eef5f6" />
+      <rect x="80" y="-3" width="75" height="6" rx="3" fill="#a259ff">
+        <animate attributeName="width" from="0" to="75" dur="1.2s" fill="freeze" />
+      </rect>
+    </g>
+
+    <!-- TailwindCSS -->
+    <g transform="translate(16, 156)">
+      <!-- Tailwind Wave Logo -->
+      <g transform="translate(-4, -4) scale(0.65)">
+        <path d="M14,4c-3.3,0-5.5,1.7-6.6,5c2.2-1.1,4.4-0.6,6.6,1.7c1.7,1.7,3.6,3.7,7.2,3.7c3.3,0,5.5-1.7,6.6-5c-2.2,1.1-4.4,0.6-6.6-1.7C19.5,6,17.6,4,14,4z" fill="#38bdf8" />
+      </g>
+      <text x="24" y="4" class="stack-label">Tailwind</text>
+      <rect x="80" y="-3" width="100" height="6" rx="3" fill="#eef5f6" />
+      <rect x="80" y="-3" width="90" height="6" rx="3" fill="#38bdf8">
+        <animate attributeName="width" from="0" to="90" dur="1.2s" fill="freeze" />
+      </rect>
+    </g>
+
+    <!-- Sass -->
+    <g transform="translate(16, 188)">
+      <!-- Sass minimal vector -->
+      <circle cx="2" cy="0" r="5" fill="#cc6699" opacity="0.3" />
+      <circle cx="2" cy="0" r="3.2" fill="#cc6699" />
+      <text x="24" y="4" class="stack-label">Sass/CSS</text>
+      <rect x="80" y="-3" width="100" height="6" rx="3" fill="#eef5f6" />
+      <rect x="80" y="-3" width="80" height="6" rx="3" fill="#cc6699">
+        <animate attributeName="width" from="0" to="80" dur="1.2s" fill="freeze" />
+      </rect>
+    </g>
+
+    <!-- HTML5 -->
+    <g transform="translate(16, 220)">
+      <polygon points="0,-6 10,-6 8,6 0,10" fill="#e34f26" />
+      <polygon points="0,-6 -10,-6 -8,6 0,10" fill="#f06529" />
+      <text x="24" y="4" class="stack-label">HTML5</text>
+      <rect x="80" y="-3" width="100" height="6" rx="3" fill="#eef5f6" />
+      <rect x="80" y="-3" width="95" height="6" rx="3" fill="#f06529">
+        <animate attributeName="width" from="0" to="95" dur="1.2s" fill="freeze" />
+      </rect>
+    </g>
+  </svg>

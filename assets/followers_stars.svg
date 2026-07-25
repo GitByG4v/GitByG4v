@@ -1,0 +1,135 @@
+<svg width="214" height="260" viewBox="0 0 214 260" xmlns="http://www.w3.org/2000/svg">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap');
+    
+    .widget-bg {
+      fill: #ffffff;
+      stroke: #eef5f6;
+      stroke-width: 1.5;
+    }
+    .widget-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 11.5px;
+      fill: #204349;
+      letter-spacing: 0.5px;
+    }
+    .widget-subtitle {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 500;
+      font-size: 8.5px;
+      fill: #608085;
+    }
+    .metric-value {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 26px;
+      fill: #1b3b40;
+    }
+    .metric-label {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 600;
+      font-size: 9px;
+      fill: #608085;
+    }
+    .stack-label {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 9px;
+      fill: #204349;
+    }
+
+    /* Animations */
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.05); opacity: 1; }
+    }
+    .pulsing-dot {
+      animation: pulse 2s infinite ease-in-out;
+      transform-origin: center;
+    }
+
+    @keyframes pulseGrid {
+      0%, 100% { opacity: 0.75; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.15); }
+    }
+
+    @keyframes floatToast {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+    .floating-toast {
+      animation: floatToast 5s ease-in-out infinite;
+    }
+
+    @keyframes drawPath {
+      from { stroke-dashoffset: 500; }
+      to { stroke-dashoffset: 0; }
+    }
+    .chart-line-1 {
+      stroke-dasharray: 500;
+      stroke-dashoffset: 500;
+      animation: drawPath 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    .chart-line-2 {
+      stroke-dasharray: 500;
+      stroke-dashoffset: 500;
+      animation: drawPath 2.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+
+    @keyframes fadeInFill {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .chart-fill {
+      opacity: 0;
+      animation: fadeInFill 1.5s ease-out 0.8s forwards;
+    }
+
+    @keyframes drawCircleGauge {
+      from { stroke-dashoffset: 213.6; }
+    }
+    .gauge-fill-followers {
+      stroke-dasharray: 213.6;
+      stroke-dashoffset: 185.8; /* 13% fill */
+      animation: drawCircleGauge 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    .gauge-fill-repos {
+      stroke-dasharray: 213.6;
+      stroke-dashoffset: 120.0; /* 44% fill */
+      animation: drawCircleGauge 1.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    .gauge-fill-acceptance {
+      stroke-dasharray: 326.7;
+      stroke-dashoffset: 29.4; /* 91% fill */
+      animation: drawCircleGauge 1.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+  </style>
+    <rect x="0" y="0" width="214" height="260" rx="16" class="widget-bg" />
+    <text x="16" y="24" class="widget-title">Network Index</text>
+    <text x="16" y="36" class="widget-subtitle">Followers and codebase size</text>
+    
+    <!-- Search Bar Mock -->
+    <g transform="translate(16, 52)">
+      <rect x="0" y="0" width="182" height="30" rx="15" fill="#f0f6f7" stroke="#e0ecef" stroke-width="1" />
+      <text x="16" y="19" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" font-weight="600" fill="#90a8ab">Search GitByG4v...</text>
+      <circle cx="160" cy="15" r="10" fill="#0a8c99" />
+      <path d="M158,13 L162,17 M158,17 L162,13" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
+    </g>
+
+    <!-- Followers ring -->
+    <g transform="translate(20, 102)">
+      <circle cx="38" cy="38" r="34" fill="none" stroke="#eaf4f5" stroke-width="5.5" />
+      <circle cx="38" cy="38" r="34" fill="none" stroke="#f5cb5c" stroke-width="5.5" stroke-linecap="round" transform="rotate(-90 38 38)" class="gauge-fill-followers" />
+      <text x="38" y="44" font-family="'Outfit', sans-serif" font-weight="700" font-size="16" fill="#1b3b40" text-anchor="middle">13</text>
+      <text x="38" y="94" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="9" fill="#204349" text-anchor="middle">Followers</text>
+    </g>
+
+    <!-- Repos ring -->
+    <g transform="translate(118, 102)">
+      <circle cx="38" cy="38" r="34" fill="none" stroke="#eaf4f5" stroke-width="5.5" />
+      <circle cx="38" cy="38" r="34" fill="none" stroke="#2ca58d" stroke-width="5.5" stroke-linecap="round" transform="rotate(-90 38 38)" class="gauge-fill-repos" />
+      <text x="38" y="44" font-family="'Outfit', sans-serif" font-weight="700" font-size="16" fill="#1b3b40" text-anchor="middle">22</text>
+      <text x="38" y="94" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="9" fill="#204349" text-anchor="middle">Repositories</text>
+    </g>
+  </svg>

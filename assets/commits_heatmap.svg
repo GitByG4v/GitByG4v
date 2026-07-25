@@ -1,0 +1,412 @@
+<svg width="440" height="162" viewBox="0 0 440 162" xmlns="http://www.w3.org/2000/svg">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap');
+    
+    .widget-bg {
+      fill: #ffffff;
+      stroke: #eef5f6;
+      stroke-width: 1.5;
+    }
+    .widget-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 11.5px;
+      fill: #204349;
+      letter-spacing: 0.5px;
+    }
+    .widget-subtitle {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 500;
+      font-size: 8.5px;
+      fill: #608085;
+    }
+    .metric-value {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 26px;
+      fill: #1b3b40;
+    }
+    .metric-label {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 600;
+      font-size: 9px;
+      fill: #608085;
+    }
+    .stack-label {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 9px;
+      fill: #204349;
+    }
+
+    /* Animations */
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.05); opacity: 1; }
+    }
+    .pulsing-dot {
+      animation: pulse 2s infinite ease-in-out;
+      transform-origin: center;
+    }
+
+    @keyframes pulseGrid {
+      0%, 100% { opacity: 0.75; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.15); }
+    }
+
+    @keyframes floatToast {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+    .floating-toast {
+      animation: floatToast 5s ease-in-out infinite;
+    }
+
+    @keyframes drawPath {
+      from { stroke-dashoffset: 500; }
+      to { stroke-dashoffset: 0; }
+    }
+    .chart-line-1 {
+      stroke-dasharray: 500;
+      stroke-dashoffset: 500;
+      animation: drawPath 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    .chart-line-2 {
+      stroke-dasharray: 500;
+      stroke-dashoffset: 500;
+      animation: drawPath 2.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+
+    @keyframes fadeInFill {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .chart-fill {
+      opacity: 0;
+      animation: fadeInFill 1.5s ease-out 0.8s forwards;
+    }
+
+    @keyframes drawCircleGauge {
+      from { stroke-dashoffset: 213.6; }
+    }
+    .gauge-fill-followers {
+      stroke-dasharray: 213.6;
+      stroke-dashoffset: 185.8; /* 13% fill */
+      animation: drawCircleGauge 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    .gauge-fill-repos {
+      stroke-dasharray: 213.6;
+      stroke-dashoffset: 120.0; /* 44% fill */
+      animation: drawCircleGauge 1.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    .gauge-fill-acceptance {
+      stroke-dasharray: 326.7;
+      stroke-dashoffset: 29.4; /* 91% fill */
+      animation: drawCircleGauge 1.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+  </style>
+    <rect x="0" y="0" width="440" height="162" rx="16" class="widget-bg" />
+    <text x="16" y="24" class="widget-title">Commit Frequency Heatmap</text>
+    <text x="16" y="38" class="widget-subtitle">Yearly grid simulator</text>
+    <g>
+      <rect x="16" y="48" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.81s;" />
+      <rect x="16" y="57" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="16" y="66" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="16" y="75" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.63s;" />
+      <rect x="16" y="84" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.93s;" />
+      <rect x="16" y="93" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.35s;" />
+      <rect x="16" y="102" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.51s;" />
+      <rect x="25" y="48" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="25" y="57" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.14s;" />
+      <rect x="25" y="66" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="25" y="75" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.55s;" />
+      <rect x="25" y="84" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.92s;" />
+      <rect x="25" y="93" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.52s;" />
+      <rect x="25" y="102" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.57s;" />
+      <rect x="34" y="48" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="34" y="57" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.88s;" />
+      <rect x="34" y="66" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.30s;" />
+      <rect x="34" y="75" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.66s;" />
+      <rect x="34" y="84" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.01s;" />
+      <rect x="34" y="93" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.49s;" />
+      <rect x="34" y="102" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="43" y="48" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.18s;" />
+      <rect x="43" y="57" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="43" y="66" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.06s;" />
+      <rect x="43" y="75" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="43" y="84" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.64s;" />
+      <rect x="43" y="93" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.70s;" />
+      <rect x="43" y="102" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.59s;" />
+      <rect x="52" y="48" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="52" y="57" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.06s;" />
+      <rect x="52" y="66" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.89s;" />
+      <rect x="52" y="75" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="52" y="84" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="52" y="93" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.55s;" />
+      <rect x="52" y="102" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.48s;" />
+      <rect x="61" y="48" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.65s;" />
+      <rect x="61" y="57" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.11s;" />
+      <rect x="61" y="66" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="61" y="75" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.25s;" />
+      <rect x="61" y="84" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.41s;" />
+      <rect x="61" y="93" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="61" y="102" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.14s;" />
+      <rect x="70" y="48" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.15s;" />
+      <rect x="70" y="57" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.55s;" />
+      <rect x="70" y="66" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.50s;" />
+      <rect x="70" y="75" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.14s;" />
+      <rect x="70" y="84" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.46s;" />
+      <rect x="70" y="93" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.55s;" />
+      <rect x="70" y="102" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.36s;" />
+      <rect x="79" y="48" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.88s;" />
+      <rect x="79" y="57" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.09s;" />
+      <rect x="79" y="66" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.27s;" />
+      <rect x="79" y="75" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.57s;" />
+      <rect x="79" y="84" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.80s;" />
+      <rect x="79" y="93" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.07s;" />
+      <rect x="79" y="102" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.00s;" />
+      <rect x="88" y="48" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.83s;" />
+      <rect x="88" y="57" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.09s;" />
+      <rect x="88" y="66" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.42s;" />
+      <rect x="88" y="75" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.88s;" />
+      <rect x="88" y="84" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.71s;" />
+      <rect x="88" y="93" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.82s;" />
+      <rect x="88" y="102" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.05s;" />
+      <rect x="97" y="48" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.81s;" />
+      <rect x="97" y="57" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.57s;" />
+      <rect x="97" y="66" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.17s;" />
+      <rect x="97" y="75" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.63s;" />
+      <rect x="97" y="84" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.25s;" />
+      <rect x="97" y="93" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.35s;" />
+      <rect x="97" y="102" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.23s;" />
+      <rect x="106" y="48" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.82s;" />
+      <rect x="106" y="57" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.74s;" />
+      <rect x="106" y="66" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="106" y="75" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.26s;" />
+      <rect x="106" y="84" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="106" y="93" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.87s;" />
+      <rect x="106" y="102" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.44s;" />
+      <rect x="115" y="48" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.78s;" />
+      <rect x="115" y="57" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.59s;" />
+      <rect x="115" y="66" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.07s;" />
+      <rect x="115" y="75" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="115" y="84" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.40s;" />
+      <rect x="115" y="93" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.19s;" />
+      <rect x="115" y="102" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="124" y="48" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.33s;" />
+      <rect x="124" y="57" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="124" y="66" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.35s;" />
+      <rect x="124" y="75" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.03s;" />
+      <rect x="124" y="84" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.94s;" />
+      <rect x="124" y="93" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.98s;" />
+      <rect x="124" y="102" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.88s;" />
+      <rect x="133" y="48" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.14s;" />
+      <rect x="133" y="57" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.11s;" />
+      <rect x="133" y="66" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.68s;" />
+      <rect x="133" y="75" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.23s;" />
+      <rect x="133" y="84" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="133" y="93" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.33s;" />
+      <rect x="133" y="102" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.04s;" />
+      <rect x="142" y="48" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.91s;" />
+      <rect x="142" y="57" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.15s;" />
+      <rect x="142" y="66" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.41s;" />
+      <rect x="142" y="75" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.60s;" />
+      <rect x="142" y="84" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.84s;" />
+      <rect x="142" y="93" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.28s;" />
+      <rect x="142" y="102" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.42s;" />
+      <rect x="151" y="48" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.02s;" />
+      <rect x="151" y="57" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.24s;" />
+      <rect x="151" y="66" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="151" y="75" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.40s;" />
+      <rect x="151" y="84" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.45s;" />
+      <rect x="151" y="93" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.37s;" />
+      <rect x="151" y="102" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.07s;" />
+      <rect x="160" y="48" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.93s;" />
+      <rect x="160" y="57" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.49s;" />
+      <rect x="160" y="66" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.66s;" />
+      <rect x="160" y="75" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="160" y="84" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="160" y="93" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.40s;" />
+      <rect x="160" y="102" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.92s;" />
+      <rect x="169" y="48" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.93s;" />
+      <rect x="169" y="57" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="169" y="66" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.63s;" />
+      <rect x="169" y="75" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.97s;" />
+      <rect x="169" y="84" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.49s;" />
+      <rect x="169" y="93" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.66s;" />
+      <rect x="169" y="102" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.28s;" />
+      <rect x="178" y="48" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.88s;" />
+      <rect x="178" y="57" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.93s;" />
+      <rect x="178" y="66" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="178" y="75" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.48s;" />
+      <rect x="178" y="84" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="178" y="93" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="178" y="102" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="187" y="48" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="187" y="57" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.80s;" />
+      <rect x="187" y="66" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.77s;" />
+      <rect x="187" y="75" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="187" y="84" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="187" y="93" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.17s;" />
+      <rect x="187" y="102" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.95s;" />
+      <rect x="196" y="48" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.36s;" />
+      <rect x="196" y="57" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.67s;" />
+      <rect x="196" y="66" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="196" y="75" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.02s;" />
+      <rect x="196" y="84" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.24s;" />
+      <rect x="196" y="93" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.90s;" />
+      <rect x="196" y="102" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="205" y="48" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="205" y="57" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.72s;" />
+      <rect x="205" y="66" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="205" y="75" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.06s;" />
+      <rect x="205" y="84" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.31s;" />
+      <rect x="205" y="93" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.45s;" />
+      <rect x="205" y="102" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.88s;" />
+      <rect x="214" y="48" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.28s;" />
+      <rect x="214" y="57" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.79s;" />
+      <rect x="214" y="66" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.40s;" />
+      <rect x="214" y="75" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.57s;" />
+      <rect x="214" y="84" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="214" y="93" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.84s;" />
+      <rect x="214" y="102" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.98s;" />
+      <rect x="223" y="48" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.65s;" />
+      <rect x="223" y="57" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.59s;" />
+      <rect x="223" y="66" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.37s;" />
+      <rect x="223" y="75" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.52s;" />
+      <rect x="223" y="84" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.24s;" />
+      <rect x="223" y="93" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.22s;" />
+      <rect x="223" y="102" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.69s;" />
+      <rect x="232" y="48" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="232" y="57" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.36s;" />
+      <rect x="232" y="66" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.92s;" />
+      <rect x="232" y="75" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.04s;" />
+      <rect x="232" y="84" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.16s;" />
+      <rect x="232" y="93" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.14s;" />
+      <rect x="232" y="102" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.84s;" />
+      <rect x="241" y="48" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.29s;" />
+      <rect x="241" y="57" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.44s;" />
+      <rect x="241" y="66" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.49s;" />
+      <rect x="241" y="75" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.62s;" />
+      <rect x="241" y="84" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.00s;" />
+      <rect x="241" y="93" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="241" y="102" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.80s;" />
+      <rect x="250" y="48" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.18s;" />
+      <rect x="250" y="57" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.81s;" />
+      <rect x="250" y="66" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="250" y="75" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.73s;" />
+      <rect x="250" y="84" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.58s;" />
+      <rect x="250" y="93" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="250" y="102" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.74s;" />
+      <rect x="259" y="48" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.53s;" />
+      <rect x="259" y="57" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.48s;" />
+      <rect x="259" y="66" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.92s;" />
+      <rect x="259" y="75" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.45s;" />
+      <rect x="259" y="84" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="259" y="93" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.89s;" />
+      <rect x="259" y="102" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.32s;" />
+      <rect x="268" y="48" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.59s;" />
+      <rect x="268" y="57" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.14s;" />
+      <rect x="268" y="66" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.47s;" />
+      <rect x="268" y="75" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.91s;" />
+      <rect x="268" y="84" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.60s;" />
+      <rect x="268" y="93" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.97s;" />
+      <rect x="268" y="102" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.99s;" />
+      <rect x="277" y="48" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.40s;" />
+      <rect x="277" y="57" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.03s;" />
+      <rect x="277" y="66" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="277" y="75" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.54s;" />
+      <rect x="277" y="84" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.02s;" />
+      <rect x="277" y="93" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.89s;" />
+      <rect x="277" y="102" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.63s;" />
+      <rect x="286" y="48" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.40s;" />
+      <rect x="286" y="57" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.18s;" />
+      <rect x="286" y="66" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.73s;" />
+      <rect x="286" y="75" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.95s;" />
+      <rect x="286" y="84" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.72s;" />
+      <rect x="286" y="93" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="286" y="102" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.65s;" />
+      <rect x="295" y="48" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.77s;" />
+      <rect x="295" y="57" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="295" y="66" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.64s;" />
+      <rect x="295" y="75" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="295" y="84" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.07s;" />
+      <rect x="295" y="93" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.91s;" />
+      <rect x="295" y="102" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.75s;" />
+      <rect x="304" y="48" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.83s;" />
+      <rect x="304" y="57" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.16s;" />
+      <rect x="304" y="66" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.78s;" />
+      <rect x="304" y="75" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.60s;" />
+      <rect x="304" y="84" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.45s;" />
+      <rect x="304" y="93" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="304" y="102" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="313" y="48" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.23s;" />
+      <rect x="313" y="57" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.14s;" />
+      <rect x="313" y="66" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.35s;" />
+      <rect x="313" y="75" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.99s;" />
+      <rect x="313" y="84" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.24s;" />
+      <rect x="313" y="93" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.14s;" />
+      <rect x="313" y="102" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.04s;" />
+      <rect x="322" y="48" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.52s;" />
+      <rect x="322" y="57" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.46s;" />
+      <rect x="322" y="66" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.08s;" />
+      <rect x="322" y="75" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.24s;" />
+      <rect x="322" y="84" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="322" y="93" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.82s;" />
+      <rect x="322" y="102" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.08s;" />
+      <rect x="331" y="48" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="331" y="57" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.93s;" />
+      <rect x="331" y="66" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.18s;" />
+      <rect x="331" y="75" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.50s;" />
+      <rect x="331" y="84" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.82s;" />
+      <rect x="331" y="93" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.56s;" />
+      <rect x="331" y="102" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.52s;" />
+      <rect x="340" y="48" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.75s;" />
+      <rect x="340" y="57" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.16s;" />
+      <rect x="340" y="66" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.27s;" />
+      <rect x="340" y="75" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="340" y="84" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="340" y="93" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.53s;" />
+      <rect x="340" y="102" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.02s;" />
+      <rect x="349" y="48" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="349" y="57" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="349" y="66" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.33s;" />
+      <rect x="349" y="75" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.65s;" />
+      <rect x="349" y="84" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.18s;" />
+      <rect x="349" y="93" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.44s;" />
+      <rect x="349" y="102" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="358" y="48" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 2.32s;" />
+      <rect x="358" y="57" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.92s;" />
+      <rect x="358" y="66" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.89s;" />
+      <rect x="358" y="75" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.84s;" />
+      <rect x="358" y="84" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.47s;" />
+      <rect x="358" y="93" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.36s;" />
+      <rect x="358" y="102" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="367" y="48" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.67s;" />
+      <rect x="367" y="57" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.43s;" />
+      <rect x="367" y="66" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="367" y="75" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.15s;" />
+      <rect x="367" y="84" width="7" height="7" rx="1.5" fill="#216e39" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.38s;" />
+      <rect x="367" y="93" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 4.00s;" />
+      <rect x="367" y="102" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="376" y="48" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.03s;" />
+      <rect x="376" y="57" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="376" y="66" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.95s;" />
+      <rect x="376" y="75" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.70s;" />
+      <rect x="376" y="84" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.28s;" />
+      <rect x="376" y="93" width="7" height="7" rx="1.5" fill="#ebedf0" />
+      <rect x="376" y="102" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.90s;" />
+      <rect x="385" y="48" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.38s;" />
+      <rect x="385" y="57" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.21s;" />
+      <rect x="385" y="66" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.02s;" />
+      <rect x="385" y="75" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.78s;" />
+      <rect x="385" y="84" width="7" height="7" rx="1.5" fill="#30a14e" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 3.87s;" />
+      <rect x="385" y="93" width="7" height="7" rx="1.5" fill="#40c463" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 1.46s;" />
+      <rect x="385" y="102" width="7" height="7" rx="1.5" fill="#9be9a8" style="animation: pulseGrid 4s ease-in-out infinite; animation-delay: 0.08s;" />
+    </g>
+    <!-- Sparkline -->
+    <g transform="translate(16, 120)">
+      <path d="M 0,25 Q 40,5 80,20 T 160,5 T 240,25 T 320,10 L 408,15 L 408,25 L 0,25 Z" fill="#2ca58d" opacity="0.1" />
+      <path d="M 0,25 Q 40,5 80,20 T 160,5 T 240,25 T 320,10 L 408,15" fill="none" stroke="#2ca58d" stroke-width="1.8" stroke-linecap="round" />
+    </g>
+  </svg>

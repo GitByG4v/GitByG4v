@@ -1,0 +1,166 @@
+<svg width="214" height="260" viewBox="0 0 214 260" xmlns="http://www.w3.org/2000/svg">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap');
+    
+    .widget-bg {
+      fill: #ffffff;
+      stroke: #eef5f6;
+      stroke-width: 1.5;
+    }
+    .widget-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 11.5px;
+      fill: #204349;
+      letter-spacing: 0.5px;
+    }
+    .widget-subtitle {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 500;
+      font-size: 8.5px;
+      fill: #608085;
+    }
+    .metric-value {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 26px;
+      fill: #1b3b40;
+    }
+    .metric-label {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 600;
+      font-size: 9px;
+      fill: #608085;
+    }
+    .stack-label {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 9px;
+      fill: #204349;
+    }
+
+    /* Animations */
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.05); opacity: 1; }
+    }
+    .pulsing-dot {
+      animation: pulse 2s infinite ease-in-out;
+      transform-origin: center;
+    }
+
+    @keyframes pulseGrid {
+      0%, 100% { opacity: 0.75; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.15); }
+    }
+
+    @keyframes floatToast {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+    .floating-toast {
+      animation: floatToast 5s ease-in-out infinite;
+    }
+
+    @keyframes drawPath {
+      from { stroke-dashoffset: 500; }
+      to { stroke-dashoffset: 0; }
+    }
+    .chart-line-1 {
+      stroke-dasharray: 500;
+      stroke-dashoffset: 500;
+      animation: drawPath 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    .chart-line-2 {
+      stroke-dasharray: 500;
+      stroke-dashoffset: 500;
+      animation: drawPath 2.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+
+    @keyframes fadeInFill {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .chart-fill {
+      opacity: 0;
+      animation: fadeInFill 1.5s ease-out 0.8s forwards;
+    }
+
+    @keyframes drawCircleGauge {
+      from { stroke-dashoffset: 213.6; }
+    }
+    .gauge-fill-followers {
+      stroke-dasharray: 213.6;
+      stroke-dashoffset: 185.8; /* 13% fill */
+      animation: drawCircleGauge 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    .gauge-fill-repos {
+      stroke-dasharray: 213.6;
+      stroke-dashoffset: 120.0; /* 44% fill */
+      animation: drawCircleGauge 1.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    .gauge-fill-acceptance {
+      stroke-dasharray: 326.7;
+      stroke-dashoffset: 29.4; /* 91% fill */
+      animation: drawCircleGauge 1.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+  </style>
+    <rect x="0" y="0" width="214" height="260" rx="16" class="widget-bg" />
+    <text x="16" y="26" class="widget-title">Contribution Log</text>
+    <text x="16" y="40" class="widget-subtitle">Milestone calendar sheet</text>
+    <text x="107" y="66" font-family="'Outfit', sans-serif" font-weight="700" font-size="12" fill="#1b3b40" text-anchor="middle">&lt;  July 2026  &gt;</text>
+    <g transform="translate(20, 88)" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" font-weight="700" fill="#608085">
+      <g fill="#204349" font-weight="800">
+        <text x="0" y="0" text-anchor="middle">S</text>
+        <text x="28" y="0" text-anchor="middle">M</text>
+        <text x="56" y="0" text-anchor="middle">T</text>
+        <text x="84" y="0" text-anchor="middle">W</text>
+        <text x="112" y="0" text-anchor="middle">T</text>
+        <text x="140" y="0" text-anchor="middle">F</text>
+        <text x="168" y="0" text-anchor="middle">S</text>
+      </g>
+      <g transform="translate(0, 20)">
+        <text x="0" y="0" text-anchor="middle" opacity="0.3">28</text>
+        <text x="28" y="0" text-anchor="middle" opacity="0.3">29</text>
+        <text x="56" y="0" text-anchor="middle" opacity="0.3">30</text>
+        <text x="84" y="0" text-anchor="middle">1</text>
+        <text x="112" y="0" text-anchor="middle">2</text>
+        <text x="140" y="0" text-anchor="middle">3</text>
+        <text x="168" y="0" text-anchor="middle">4</text>
+
+        <text x="0" y="24" text-anchor="middle">5</text>
+        <text x="28" y="24" text-anchor="middle">6</text>
+        <circle cx="56" cy="20.5" r="9" fill="#2ca58d" opacity="0.15" />
+        <text x="56" y="24" text-anchor="middle" fill="#2ca58d">7</text>
+        <text x="84" y="24" text-anchor="middle">8</text>
+        <text x="112" y="24" text-anchor="middle">9</text>
+        <text x="140" y="24" text-anchor="middle">10</text>
+        <text x="168" y="24" text-anchor="middle">11</text>
+
+        <text x="0" y="48" text-anchor="middle">12</text>
+        <text x="28" y="48" text-anchor="middle">13</text>
+        <text x="56" y="48" text-anchor="middle">14</text>
+        <circle cx="84" cy="44.5" r="9" fill="#2ca58d" />
+        <text x="84" y="48" text-anchor="middle" fill="#ffffff">15</text>
+        <text x="112" y="48" text-anchor="middle">16</text>
+        <text x="140" y="48" text-anchor="middle">17</text>
+        <text x="168" y="48" text-anchor="middle">18</text>
+
+        <text x="0" y="72" text-anchor="middle">19</text>
+        <text x="28" y="72" text-anchor="middle">20</text>
+        <text x="56" y="72" text-anchor="middle">21</text>
+        <text x="84" y="72" text-anchor="middle">22</text>
+        <text x="112" y="72" text-anchor="middle">23</text>
+        <circle cx="140" cy="68.5" r="9" fill="#2ca58d" opacity="0.15" />
+        <text x="140" y="72" text-anchor="middle" fill="#2ca58d">24</text>
+        <circle cx="168" cy="68.5" r="9" fill="#f5cb5c" />
+        <text x="168" y="72" text-anchor="middle" fill="#1b3b40">25</text>
+      </g>
+    </g>
+    <g transform="translate(20, 230)" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="700" fill="#608085">
+      <circle cx="0" cy="0" r="3" fill="#2ca58d" />
+      <text x="8" y="3">Commits</text>
+      <circle cx="95" cy="0" r="3" fill="#f5cb5c" />
+      <text x="103" y="3">Today</text>
+    </g>
+  </svg>

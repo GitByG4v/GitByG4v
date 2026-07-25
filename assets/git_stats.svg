@@ -1,0 +1,128 @@
+<svg width="214" height="162" viewBox="0 0 214 162" xmlns="http://www.w3.org/2000/svg">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap');
+    
+    .widget-bg {
+      fill: #ffffff;
+      stroke: #eef5f6;
+      stroke-width: 1.5;
+    }
+    .widget-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 11.5px;
+      fill: #204349;
+      letter-spacing: 0.5px;
+    }
+    .widget-subtitle {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 500;
+      font-size: 8.5px;
+      fill: #608085;
+    }
+    .metric-value {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 26px;
+      fill: #1b3b40;
+    }
+    .metric-label {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 600;
+      font-size: 9px;
+      fill: #608085;
+    }
+    .stack-label {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 9px;
+      fill: #204349;
+    }
+
+    /* Animations */
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.05); opacity: 1; }
+    }
+    .pulsing-dot {
+      animation: pulse 2s infinite ease-in-out;
+      transform-origin: center;
+    }
+
+    @keyframes pulseGrid {
+      0%, 100% { opacity: 0.75; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.15); }
+    }
+
+    @keyframes floatToast {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+    .floating-toast {
+      animation: floatToast 5s ease-in-out infinite;
+    }
+
+    @keyframes drawPath {
+      from { stroke-dashoffset: 500; }
+      to { stroke-dashoffset: 0; }
+    }
+    .chart-line-1 {
+      stroke-dasharray: 500;
+      stroke-dashoffset: 500;
+      animation: drawPath 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    .chart-line-2 {
+      stroke-dasharray: 500;
+      stroke-dashoffset: 500;
+      animation: drawPath 2.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+
+    @keyframes fadeInFill {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .chart-fill {
+      opacity: 0;
+      animation: fadeInFill 1.5s ease-out 0.8s forwards;
+    }
+
+    @keyframes drawCircleGauge {
+      from { stroke-dashoffset: 213.6; }
+    }
+    .gauge-fill-followers {
+      stroke-dasharray: 213.6;
+      stroke-dashoffset: 185.8; /* 13% fill */
+      animation: drawCircleGauge 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    .gauge-fill-repos {
+      stroke-dasharray: 213.6;
+      stroke-dashoffset: 120.0; /* 44% fill */
+      animation: drawCircleGauge 1.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    .gauge-fill-acceptance {
+      stroke-dasharray: 326.7;
+      stroke-dashoffset: 29.4; /* 91% fill */
+      animation: drawCircleGauge 1.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+  </style>
+    <rect x="0" y="0" width="214" height="162" rx="16" class="widget-bg" />
+    <text x="16" y="24" class="widget-title">Git Stats</text>
+    <text x="16" y="36" class="widget-subtitle">Aggregated developer indexes</text>
+    <g transform="translate(16, 50)">
+      <text x="0" y="20" class="metric-value">129</text>
+      <text x="0" y="32" class="metric-label">Commits</text>
+      <path d="M0,45 Q15,35 30,42 T60,38" fill="none" stroke="#f5cb5c" stroke-width="1.8" stroke-linecap="round" />
+    </g>
+    <g transform="translate(90, 50)">
+      <text x="0" y="20" class="metric-value">11</text>
+      <text x="0" y="32" class="metric-label">PRs</text>
+      <path d="M0,45 Q15,40 30,32 T60,38" fill="none" stroke="#2ca58d" stroke-width="1.8" stroke-linecap="round" />
+    </g>
+    <!-- Circular gauge for PR acceptance -->
+    <g transform="translate(150, 48)">
+      <circle cx="24" cy="24" r="20" fill="none" stroke="#eaf4f5" stroke-width="4.5" />
+      <circle cx="24" cy="24" r="20" fill="none" stroke="#0a8c99" stroke-width="4.5" stroke-linecap="round" transform="rotate(-90 24 24)" class="gauge-fill-acceptance" />
+      <text x="24" y="28" font-family="'Outfit', sans-serif" font-weight="700" font-size="10.5" fill="#1b3b40" text-anchor="middle">91%</text>
+      <text x="24" y="58" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="7.5" fill="#608085" text-anchor="middle">Merge %</text>
+    </g>
+  </svg>

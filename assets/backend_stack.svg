@@ -1,0 +1,178 @@
+<svg width="214" height="260" viewBox="0 0 214 260" xmlns="http://www.w3.org/2000/svg">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap');
+    
+    .widget-bg {
+      fill: #ffffff;
+      stroke: #eef5f6;
+      stroke-width: 1.5;
+    }
+    .widget-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 11.5px;
+      fill: #204349;
+      letter-spacing: 0.5px;
+    }
+    .widget-subtitle {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 500;
+      font-size: 8.5px;
+      fill: #608085;
+    }
+    .metric-value {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 26px;
+      fill: #1b3b40;
+    }
+    .metric-label {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 600;
+      font-size: 9px;
+      fill: #608085;
+    }
+    .stack-label {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 9px;
+      fill: #204349;
+    }
+
+    /* Animations */
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.05); opacity: 1; }
+    }
+    .pulsing-dot {
+      animation: pulse 2s infinite ease-in-out;
+      transform-origin: center;
+    }
+
+    @keyframes pulseGrid {
+      0%, 100% { opacity: 0.75; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.15); }
+    }
+
+    @keyframes floatToast {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+    .floating-toast {
+      animation: floatToast 5s ease-in-out infinite;
+    }
+
+    @keyframes drawPath {
+      from { stroke-dashoffset: 500; }
+      to { stroke-dashoffset: 0; }
+    }
+    .chart-line-1 {
+      stroke-dasharray: 500;
+      stroke-dashoffset: 500;
+      animation: drawPath 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    .chart-line-2 {
+      stroke-dasharray: 500;
+      stroke-dashoffset: 500;
+      animation: drawPath 2.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+
+    @keyframes fadeInFill {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .chart-fill {
+      opacity: 0;
+      animation: fadeInFill 1.5s ease-out 0.8s forwards;
+    }
+
+    @keyframes drawCircleGauge {
+      from { stroke-dashoffset: 213.6; }
+    }
+    .gauge-fill-followers {
+      stroke-dasharray: 213.6;
+      stroke-dashoffset: 185.8; /* 13% fill */
+      animation: drawCircleGauge 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    .gauge-fill-repos {
+      stroke-dasharray: 213.6;
+      stroke-dashoffset: 120.0; /* 44% fill */
+      animation: drawCircleGauge 1.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    .gauge-fill-acceptance {
+      stroke-dasharray: 326.7;
+      stroke-dashoffset: 29.4; /* 91% fill */
+      animation: drawCircleGauge 1.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+  </style>
+    <rect x="0" y="0" width="214" height="260" rx="16" class="widget-bg" />
+    <text x="16" y="26" class="widget-title">Backend &amp; Databases</text>
+    <text x="16" y="40" class="widget-subtitle">Data stores &amp; script layers</text>
+
+    <!-- Node.js -->
+    <g transform="translate(16, 60)">
+      <polygon points="0,-5 5,-2 5,4 0,7 -5,4 -5,-2" fill="#339933" />
+      <text x="24" y="4" class="stack-label">Node.js</text>
+      <rect x="80" y="-3" width="100" height="6" rx="3" fill="#eef5f6" />
+      <rect x="80" y="-3" width="85" height="6" rx="3" fill="#339933">
+        <animate attributeName="width" from="0" to="85" dur="1.2s" fill="freeze" />
+      </rect>
+    </g>
+
+    <!-- Express -->
+    <g transform="translate(16, 92)">
+      <rect x="-6" y="-6" width="12" height="12" rx="2" fill="#222222" />
+      <text x="-4" y="3" font-family="'Outfit', sans-serif" font-weight="800" font-size="7" fill="#ffffff">ex</text>
+      <text x="24" y="4" class="stack-label">Express</text>
+      <rect x="80" y="-3" width="100" height="6" rx="3" fill="#eef5f6" />
+      <rect x="80" y="-3" width="80" height="6" rx="3" fill="#222222">
+        <animate attributeName="width" from="0" to="80" dur="1.2s" fill="freeze" />
+      </rect>
+    </g>
+
+    <!-- PostgreSQL -->
+    <g transform="translate(16, 124)">
+      <!-- database cylinder vector -->
+      <ellipse cx="0" cy="-4" rx="6" ry="2.2" fill="#336791" />
+      <path d="M-6,-4 L-6,4 C-6,6 6,6 6,4 L6,-4 Z" fill="#336791" />
+      <ellipse cx="0" cy="0" rx="6" ry="2.2" fill="#ffffff" opacity="0.3" />
+      <text x="24" y="4" class="stack-label">PostgreSQL</text>
+      <rect x="80" y="-3" width="100" height="6" rx="3" fill="#eef5f6" />
+      <rect x="80" y="-3" width="70" height="6" rx="3" fill="#336791">
+        <animate attributeName="width" from="0" to="70" dur="1.2s" fill="freeze" />
+      </rect>
+    </g>
+
+    <!-- MongoDB -->
+    <g transform="translate(16, 156)">
+      <!-- Leaf leaf minimal vector -->
+      <path d="M0,-8 C4,-5 6,-1 2,4 C0,6 -2,6 -2,6 C-2,6 -4,4 -3,2 C-2,0 -2,-4 0,-8 Z" fill="#47a248" />
+      <text x="24" y="4" class="stack-label">MongoDB</text>
+      <rect x="80" y="-3" width="100" height="6" rx="3" fill="#eef5f6" />
+      <rect x="80" y="-3" width="75" height="6" rx="3" fill="#47a248">
+        <animate attributeName="width" from="0" to="75" dur="1.2s" fill="freeze" />
+      </rect>
+    </g>
+
+    <!-- Redis -->
+    <g transform="translate(16, 188)">
+      <polygon points="-6,-4 0,-7 6,-4 0,-1" fill="#dc382d" />
+      <polygon points="-6,1 0,-2 6,1 0,4" fill="#dc382d" opacity="0.8" />
+      <text x="24" y="4" class="stack-label">Redis</text>
+      <rect x="80" y="-3" width="100" height="6" rx="3" fill="#eef5f6" />
+      <rect x="80" y="-3" width="60" height="6" rx="3" fill="#dc382d">
+        <animate attributeName="width" from="0" to="60" dur="1.2s" fill="freeze" />
+      </rect>
+    </g>
+
+    <!-- MySQL -->
+    <g transform="translate(16, 220)">
+      <ellipse cx="0" cy="-4" rx="6" ry="2.2" fill="#00758f" />
+      <path d="M-6,-4 L-6,4 C-6,6 6,6 6,4 L6,-4 Z" fill="#00758f" />
+      <text x="24" y="4" class="stack-label">MySQL</text>
+      <rect x="80" y="-3" width="100" height="6" rx="3" fill="#eef5f6" />
+      <rect x="80" y="-3" width="75" height="6" rx="3" fill="#00758f">
+        <animate attributeName="width" from="0" to="75" dur="1.2s" fill="freeze" />
+      </rect>
+    </g>
+  </svg>
