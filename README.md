@@ -3,7 +3,7 @@
 <div align="center">
 
 <!-- Futuristic HUD SVG Header -->
-<img src="../assets/hud_card.svg" width="100%" alt="Gavaskar Holographic AR HUD Card"/>
+<img src="./assets/hud_card.svg" width="100%" alt="Gavaskar Holographic AR HUD Card"/>
 
 <br>
 
