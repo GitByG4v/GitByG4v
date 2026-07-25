@@ -1,129 +1,117 @@
+# 🛰️ SYSTEM INITIALIZED // USER: GAVASKAR
+
 <div align="center">
 
-<img src="./assets/hud_card.svg" width="100%" alt="GAVAS Dashboard"/>
+<!-- Futuristic HUD SVG Header -->
+<img src="./hud_card.svg" width="100%" alt="Gavaskar Holographic AR HUD Card"/>
 
 <br>
 
-<img src="https://readme-typing-svg.demolab.com?font=Outfit&weight=600&size=18&duration=3000&pause=1000&color=20C8D8&center=true&vCenter=true&width=650&lines=Full+Stack+Engineer;Creative+UI%2FUX+Designer;Cloud+%7C+DevOps+%7C+Automation"/>
+<!-- Futuristic HUD Modular Dashboard Widgets -->
+<table width="100%" border="0" cellpadding="4" cellspacing="6">
+  <tr>
+    <td colspan="2" width="67%" align="center" valign="top">
+      <img src="./assets/commits_heatmap.svg" width="100%" alt="Commit Frequency Heatmap" />
+    </td>
+    <td width="33%" align="center" valign="top">
+      <img src="./assets/git_stats.svg" width="100%" alt="Git Stats" />
+    </td>
+  </tr>
+  <tr>
+    <td width="33%" align="center" valign="top">
+      <img src="./assets/frontend_stack.svg" width="100%" alt="Frontend Stack" />
+    </td>
+    <td width="33%" align="center" valign="top">
+      <img src="./assets/backend_stack.svg" width="100%" alt="Backend Stack" />
+    </td>
+    <td width="33%" align="center" valign="top">
+      <img src="./assets/devops_stack.svg" width="100%" alt="DevOps Stack" />
+    </td>
+  </tr>
+  <tr>
+    <td width="33%" align="center" valign="top">
+      <img src="./assets/followers_stars.svg" width="100%" alt="Network & Followers" />
+    </td>
+    <td width="33%" align="center" valign="top">
+      <img src="./assets/calendar.svg" width="100%" alt="Contribution Calendar" />
+    </td>
+    <td width="33%" align="center" valign="top">
+      <img src="./assets/velocity_score.svg" width="100%" alt="Velocity & Achievements" />
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3" width="100%" align="center" valign="top">
+      <img src="./assets/activity_trend.svg" width="100%" alt="Activity Trend Graph" />
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<!-- Typing Subtitle matching Neon Themes -->
+<img src="https://readme-typing-svg.demolab.com?font=Outfit&weight=700&size=22&duration=3000&pause=1000&color=7DCFFF&center=true&vCenter=true&width=650&height=40&lines=FULL-STACK+ENGINEER;CREATIVE+UI%2FUX+DESIGNER;DEVOPS+%26+SYSTEMS+ARCHITECT" alt="Typing Subtitle" />
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=gitbyg4v&label=SYSTEM_VIEWS&color=7dcfff&style=flat-square" alt="Views"/>
+  <img src="https://img.shields.io/github/followers/gitbyg4v?label=SUBSCRIBERS&style=flat-square&color=bb9af7&logo=github" alt="Followers"/>
+  <img src="https://img.shields.io/badge/STATUS-Active_Open_To_Work-9ece6a?style=flat-square" alt="Status"/>
+</p>
 
 </div>
 
 ---
 
-## 📊 Dashboard
+### 💻 SYSTEM DIAGNOSTICS & TELEMETRY
 
-<table width="100%">
-<tr>
+> **[!] SECURE SHELL ESTABLISHED**
+> *   **Primary Core:** Full-Stack Web Development, Responsive UI/UX Design, and cloud deployments.
+> *   **Secondary Core:** High-Performance automation, custom vector graphic scripting, and infrastructure orchestration.
 
-<td width="33%" valign="top">
+---
 
-### 👤 Profile
+### ☕ COFFEE-TO-CODE CONVERTER PIPELINE
 
-```yaml
-Name:
-  Gavaskar
+Here is the logic execution trace running continuously inside the system:
 
-Role:
-  Full Stack Engineer
-
-Status:
-  🟢 Available
-
-Location:
-  Sri Lanka
+```go
+func main() {
+    caffeineSupply := 100
+    for caffeineSupply > 0 {
+        code.Write()
+        bugs.Generate()
+        caffeineSupply--
+        
+        if bugs.Count() > 0 {
+            caffeineSupply -= 10 // Debugging cost
+            bugs.Fix()
+        }
+        
+        if caffeineSupply <= 5 {
+            mug.Refill("Espresso")
+            caffeineSupply = 100
+        }
+    }
+}
 ```
 
-</td>
+---
 
-<td width="33%" valign="top">
+### 👾 CONTRIB LEVEL // GRID SIMULATOR
 
-### 🚀 Tech Stack
-
-<p align="center">
-
-<img src="https://skillicons.dev/icons?i=react,ts,nodejs,docker"/>
-
-<br><br>
-
-<img src="https://skillicons.dev/icons?i=aws,postgres,figma,git"/>
-
-</p>
-
-</td>
-
-<td width="33%" valign="top">
-
-### 🎯 Current Focus
-
-- Modern Web Apps
-- UI/UX Design
-- Cloud Deployment
-- Automation
-- Open Source
-
-</td>
-
-</tr>
-</table>
+<div align="center">
+<img src="https://raw.githubusercontent.com/gitbyg4v/gitbyg4v/output/github-contribution-grid-snake.svg" width="100%" alt="Contribution Snake"/>
+</div>
 
 ---
 
-<table width="100%">
-<tr>
-
-<td width="50%" valign="top">
-
-## 📦 Featured Projects
-
-🌿 **Medicinal Plant AI**
-
-Computer Vision • Microservices • Docker
-
-<br>
-
-🤖 **Automation Lab**
-
-n8n • APIs • Cloud Workflows
-
-<br>
-
-🎨 **Creative UI**
-
-React • Tailwind CSS • SVG Animation
-
-</td>
-
-<td width="50%" valign="top">
-
-## 📈 GitHub Overview
-
-<img width="100%" src="https://github-readme-stats.vercel.app/api?username=gitbyg4v&show_icons=true&hide_border=true&theme=transparent"/>
-
-</td>
-
-</tr>
-</table>
-
----
+### 📡 COMMUNICATION CHANNELS
 
 <div align="center">
 
-### 🌐 Connect
+[LinkedIn](https://linkedin.com/in/g4v) • [Gmail](mailto:g4v.dev@gmail.com) • [Interactive Portfolio](https://gitbyg4v.github.io/Portfolio/)
 
-<a href="https://github.com/gitbyg4v">
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github"/>
-</a>
+<br>
 
-<a href="https://linkedin.com/in/g4v">
-<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin"/>
-</a>
-
-<a href="https://gitbyg4v.github.io/Portfolio/">
-<img src="https://img.shields.io/badge/Portfolio-20C8D8?style=for-the-badge"/>
-</a>
-
-<a href="mailto:g4v.dev@gmail.com">
-<img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail"/>
-</a>
+<img src="https://capsule-render.vercel.app/api?type=slice&color=0:7dcfff,50:bb9af7,100:f7768e&height=100&section=footer" width="100%" alt="Footer spacer"/>
 
 </div>
