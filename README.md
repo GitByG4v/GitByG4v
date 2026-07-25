@@ -1,40 +1,23 @@
 <div align="center">
 
-<img src="./assets/hud_card.svg" width="100%" alt="GAVAS HUD"/>
+<img src="./assets/hud_card.svg" width="100%" alt="GAVAS Dashboard"/>
 
 <br>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=2500&pause=1200&color=7DCFFF&center=true&vCenter=true&width=750&lines=Initializing+Developer+Core...;Building+Modern+Experiences...;Cloud+%7C+React+%7C+Automation;Welcome+to+GAVAS+OS"/>
-
-<br>
-
-<img src="https://komarev.com/ghpvc/?username=gitbyg4v&label=VISITORS&color=7dcfff&style=flat-square"/>
-<img src="https://img.shields.io/github/followers/gitbyg4v?style=flat-square&color=bb9af7"/>
-<img src="https://img.shields.io/badge/STATUS-ONLINE-9ece6a?style=flat-square"/>
+<img src="https://readme-typing-svg.demolab.com?font=Outfit&weight=600&size=18&duration=3000&pause=1000&color=20C8D8&center=true&vCenter=true&width=650&lines=Full+Stack+Engineer;Creative+UI%2FUX+Designer;Cloud+%7C+DevOps+%7C+Automation"/>
 
 </div>
 
 ---
 
-# 🛰 System Boot
+## 📊 Dashboard
 
-```text
-> boot
+<table width="100%">
+<tr>
 
-Loading User...
-Loading Experience...
-Loading React Runtime...
-Loading Docker Services...
-Loading Creative Engine...
+<td width="33%" valign="top">
 
-✔ SYSTEM READY
-
-Welcome to GAVAS OS.
-```
-
----
-
-# 💻 Developer Identity
+### 👤 Profile
 
 ```yaml
 Name:
@@ -43,179 +26,104 @@ Name:
 Role:
   Full Stack Engineer
 
-Focus:
-  - React
-  - TypeScript
-  - Node.js
-  - UI/UX
-  - DevOps
-  - Cloud
+Status:
+  🟢 Available
 
-Current Mission:
-  Building scalable products
-  with beautiful interfaces.
+Location:
+  Sri Lanka
 ```
 
----
+</td>
 
-# ⚡ Current Objectives
+<td width="33%" valign="top">
 
-- 🚀 Build production-ready SaaS products
-- 🤖 AI-powered automation
-- ☁️ Cloud-native deployments
-- 🎨 Beautiful UI/UX experiences
-- 📦 Open-source contributions
-
----
-
-# 🧠 Tech Ecosystem
-
-## Languages
+### 🚀 Tech Stack
 
 <p align="center">
-<img src="https://skillicons.dev/icons?i=js,ts,python,java,cpp,html,css"/>
+
+<img src="https://skillicons.dev/icons?i=react,ts,nodejs,docker"/>
+
+<br><br>
+
+<img src="https://skillicons.dev/icons?i=aws,postgres,figma,git"/>
+
 </p>
 
-## Frontend
+</td>
 
-<p align="center">
-<img src="https://skillicons.dev/icons?i=react,nextjs,vue,tailwind,sass"/>
-</p>
+<td width="33%" valign="top">
 
-## Backend
+### 🎯 Current Focus
 
-<p align="center">
-<img src="https://skillicons.dev/icons?i=nodejs,express,php,fastapi,flask"/>
-</p>
+- Modern Web Apps
+- UI/UX Design
+- Cloud Deployment
+- Automation
+- Open Source
 
-## Databases
+</td>
 
-<p align="center">
-<img src="https://skillicons.dev/icons?i=postgres,mongodb,mysql,redis"/>
-</p>
-
-## DevOps
-
-<p align="center">
-<img src="https://skillicons.dev/icons?i=docker,kubernetes,aws,linux,nginx,githubactions"/>
-</p>
+</tr>
+</table>
 
 ---
 
-# 📂 Featured Projects
+<table width="100%">
+<tr>
 
-## 🌿 Medicinal Plant AI
+<td width="50%" valign="top">
 
-```text
-Architecture
-────────────
-Frontend      Flask
-Backend       FastAPI
-Model         ResNet50
-Gateway       Nginx
-Deployment    Docker
-Database      PostgreSQL
-```
+## 📦 Featured Projects
 
----
+🌿 **Medicinal Plant AI**
 
-## 🤖 Automation Lab
-
-```text
-n8n
-Docker
-REST APIs
-Webhooks
-Cloud Integrations
-```
-
----
-
-## 🎨 Creative UI Lab
-
-```text
-React
-TailwindCSS
-Framer Motion
-SVG Animation
-```
-
----
-
-# 📈 GitHub Analytics
-
-<div align="center">
-
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=gitbyg4v&show_icons=true&theme=tokyonight&hide_border=true"/>
-
-<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=gitbyg4v&layout=compact&theme=tokyonight&hide_border=true"/>
-
-</div>
+Computer Vision • Microservices • Docker
 
 <br>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=gitbyg4v&theme=tokyo-night&hide_border=true"/>
+🤖 **Automation Lab**
 
----
+n8n • APIs • Cloud Workflows
 
-# 🐍 Contribution Network
+<br>
 
-<img src="https://raw.githubusercontent.com/gitbyg4v/gitbyg4v/output/github-contribution-grid-snake.svg"/>
+🎨 **Creative UI**
 
----
+React • Tailwind CSS • SVG Animation
 
-# ☕ Runtime
+</td>
 
-```go
-func Developer() {
+<td width="50%" valign="top">
 
-    for {
+## 📈 GitHub Overview
 
-        Coffee()
+<img width="100%" src="https://github-readme-stats.vercel.app/api?username=gitbyg4v&show_icons=true&hide_border=true&theme=transparent"/>
 
-        Code()
+</td>
 
-        Debug()
-
-        Learn()
-
-        Repeat()
-
-    }
-
-}
-```
-
----
-
-# 📡 Connect
-
-<div align="center">
-
-[Portfolio](https://gitbyg4v.github.io/Portfolio)
-•
-[LinkedIn](https://linkedin.com/in/g4v)
-•
-[Email](mailto:g4v.dev@gmail.com)
-
-</div>
+</tr>
+</table>
 
 ---
 
 <div align="center">
 
-```
-SYSTEM STATUS
+### 🌐 Connect
 
-██████████████████
+<a href="https://github.com/gitbyg4v">
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github"/>
+</a>
 
-ONLINE
+<a href="https://linkedin.com/in/g4v">
+<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin"/>
+</a>
 
-Still Building...
+<a href="https://gitbyg4v.github.io/Portfolio/">
+<img src="https://img.shields.io/badge/Portfolio-20C8D8?style=for-the-badge"/>
+</a>
 
-█
-```
-
-<img src="https://capsule-render.vercel.app/api?type=waving&height=180&color=0:7DCFFF,50:BB9AF7,100:F7768E&section=footer"/>
+<a href="mailto:g4v.dev@gmail.com">
+<img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail"/>
+</a>
 
 </div>
