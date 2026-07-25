@@ -1,107 +1,116 @@
-<h2 align="center">Hi 👋! I'm Gavaskar</h2>
-<h3 align="center">Aspiring Software Engineer • UI/UX Designer • DevOps Enthusiast</h3>
+<div align="center">
 
-###
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:00d4ff&height=220&section=header&text=GAVASKAR&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Software%20Engineer%20•%20UI/UX%20Designer%20•%20DevOps%20Enthusiast&descAlignY=58&descSize=18" width="100%"/>
+
+<br>
+
+<a href="https://gitbyg4v.github.io/Portfolio/">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=3000&pause=800&color=00D4FF&center=true&vCenter=true&multiline=true&repeat=true&width=650&height=100&lines=%3E+whoami+%3A+Gavaskar+;%3E+status+%3A+Building+scalable+systems...;%3E+stack+%3A+MERN+%7C+DevOps+%7C+Cloud;%3E+mode+%3A+Always_Shipping_%F0%9F%9A%80" alt="Typing SVG" />
+</a>
+
+<br><br>
+
+<img src="https://komarev.com/ghpvc/?username=gitbyg4v&label=PROFILE+VIEWS&color=00d4ff&style=for-the-badge" alt="profile views"/>
+<img src="https://img.shields.io/github/followers/gitbyg4v?label=FOLLOWERS&style=for-the-badge&color=00d4ff&logo=github" alt="followers"/>
+<img src="https://img.shields.io/badge/LOCATION-Sri%20Lanka%20🇱🇰-00d4ff?style=for-the-badge" alt="location"/>
+
+</div>
+
+<br>
+
+## ⚡ &nbsp;Transmission Log
+
+```yaml
+identity:
+  role: "Aspiring Software Engineer"
+  focus: ["Full-Stack Development", "UI/UX Design", "DevOps"]
+  origin: "Sri Lanka 🇱🇰"
+  currently_learning: "Intermediate DevOps & System Design"
+  currently_building: "Scalable, user-friendly web applications"
+  fun_fact: "I design the interface before I write a single line of backend code"
+
+contact:
+  portfolio: "https://gitbyg4v.github.io/Portfolio/"
+  email: "g4v.dev@gmail.com"
+  linkedin: "linkedin.com/in/g4v"
+```
+
+<br>
+
+## 🛰️ &nbsp;Core Systems — Tech Stack
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=gitbyg4v&show_icons=true&theme=dracula&include_all_commits=true&count_private=true" height="150" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=gitbyg4v&layout=compact&langs_count=8&theme=dracula" height="150" />
+
+**Languages**
+<br>
+<img src="https://skillicons.dev/icons?i=js,py,java,cpp&theme=dark" />
+
+<br><br>
+
+**Frontend & Design**
+<br>
+<img src="https://skillicons.dev/icons?i=react,vue,html,css,figma&theme=dark" />
+
+<br><br>
+
+**Backend & Databases**
+<br>
+<img src="https://skillicons.dev/icons?i=nodejs,express,php,mysql,postgres,mongodb&theme=dark" />
+
+<br><br>
+
+**DevOps & Infrastructure**
+<br>
+<img src="https://skillicons.dev/icons?i=docker,kubernetes,jenkins,nginx,linux,git,firebase,aws&theme=dark" />
+
 </div>
 
-###
+<br>
 
-<img align="right" height="160" src="https://i.imgflip.com/65efzo.gif" />
+## 📡 &nbsp;Live Stats Feed
 
-###
-
-### 🚀 About Me
-- 🎓 Computer Science Undergraduate from Sri Lanka 🇱🇰  
-- 💡 Passionate about building scalable & user-friendly applications  
-- 🎨 UI/UX Designer (Figma, Prototyping, UX Thinking)  
-- ⚙️ DevOps Enthusiast (Docker, Kubernetes, CI/CD)  
-- 🌱 Currently learning **Intermediate DevOps & System Design**  
-
-- 👨‍💻 Portfolio: https://gitbyg4v.github.io/Portfolio/  
-- 📫 Email: **g4v.dev@gmail.com**
-
-###
-
-### 🛠️ Tech Stack
-
-#### 💻 Programming & Web
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30"/>
-  <img width="12"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="30"/>
-  <img width="12"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="30"/>
-  <img width="12"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="30"/>
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=gitbyg4v&show_icons=true&count_private=true&include_all_commits=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d4ff&icon_color=00d4ff&text_color=c9d1d9" height="165"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=gitbyg4v&theme=tokyonight&hide_border=true&background=0d1117&ring=00d4ff&fire=00d4ff&currStreakLabel=00d4ff" height="165"/>
 </div>
 
-#### 🌐 Frontend & UI
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="30"/>
-  <img width="12"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" height="30"/>
-  <img width="12"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="30"/>
-  <img width="12"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="30"/>
-  <img width="12"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" height="30"/>
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gitbyg4v&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d4ff&langs_count=8" height="165"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=gitbyg4v&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=00d4ff&line=00d4ff&point=ffffff" height="165"/>
 </div>
 
-#### ⚙️ Backend & Databases
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="30"/>
-  <img width="12"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" height="30"/>
-  <img width="12"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" height="30"/>
-  <img width="12"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="30"/>
-  <img width="12"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="30"/>
-  <img width="12"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" height="30"/>
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=gitbyg4v&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&row=1" />
 </div>
 
-#### 🚀 DevOps & Tools
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="30"/>
-  <img width="12"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" height="30"/>
-  <img width="12"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" height="30"/>
-  <img width="12"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" height="30"/>
-  <img width="12"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="30"/>
-  <img width="12"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="30"/>
-  <img width="12"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" height="30"/>
-  <img width="12"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" height="30"/>
+<br>
+
+## 🎮 &nbsp;Neural Snake // Contribution Grid
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/maurodesouza/maurodesouza/output/snake.svg" alt="Snake animation eating contribution graph" width="100%"/>
 </div>
 
-###
+<br>
 
-### 🌐 Connect with Me
-<div align="left">
-  <a href="https://linkedin.com/in/g4v" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&style=for-the-badge&logoColor=white" height="35"/>
-  </a>
-  <a href="mailto:g4v.dev@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-D14836?logo=gmail&style=for-the-badge&logoColor=white" height="35"/>
-  </a>
+## 🌐 &nbsp;Open a Channel
+
+<div align="center">
+
+<a href="https://linkedin.com/in/g4v" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&style=for-the-badge&logoColor=white" height="35"/>
+</a>
+<a href="mailto:g4v.dev@gmail.com">
+  <img src="https://img.shields.io/badge/Gmail-D14836?logo=gmail&style=for-the-badge&logoColor=white" height="35"/>
+</a>
+<a href="https://gitbyg4v.github.io/Portfolio/" target="_blank">
+  <img src="https://img.shields.io/badge/Portfolio-00d4ff?logo=vercel&style=for-the-badge&logoColor=black" height="35"/>
+</a>
+
+<br><br>
+
+<img src="https://img.shields.io/badge/Built%20with-☕%20%2B%20🎨%20%2B%20%3C%2F%3E-00d4ff?style=for-the-badge" />
+
 </div>
 
-###
-
-<br clear="both">
-
-<img src="https://raw.githubusercontent.com/maurodesouza/maurodesouza/output/snake.svg" alt="Snake animation" />
-
-###
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00d4ff,50:203a43,100:0f2027&height=120&section=footer" width="100%"/>
