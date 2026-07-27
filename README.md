@@ -1,54 +1,112 @@
-
 <div align="center">
 
-<!-- Futuristic HUD SVG Header -->
-<img src="./assets/hud_card.svg" width="100%" alt="Gavaskar Holographic AR HUD Card"/>
+<img
+  src="./assets/hud_card.svg"
+  width="100%"
+  loading="eager"
+  decoding="sync"
+  alt="Gavaskar Holographic HUD Card"
+/>
 
 <br>
-- 👨‍💻 All of my projects are available at [https://gitbyg4v.github.io/Portfolio/](https://gitbyg4v.github.io/Portfolio/)
 
-- 📫 How to reach me **g4v.dev@gmail.com**
-<!-- Futuristic HUD Modular Dashboard Widgets -->
-<table width="100%" border="0" cellpadding="4" cellspacing="6">
-  <tr>
-    <td width="33%" align="center" valign="top">
-      <img src="./assets/frontend_stack.svg" width="100%" alt="Frontend Stack" />
-    </td>
-    <td width="33%" align="center" valign="top">
-      <img src="./assets/backend_stack.svg" width="100%" alt="Backend Stack" />
-    </td>
-    <td width="33%" align="center" valign="top">
-      <img src="./assets/devops_stack.svg" width="100%" alt="DevOps Stack" />
-    </td>
-  </tr>
+### 👨‍💻 Full-Stack Engineer • UI/UX Designer • DevOps & Systems Architect
+
+Portfolio → https://gitbyg4v.github.io/Portfolio/
+
+Contact → **g4v.dev@gmail.com**
+
+<table width="100%" cellspacing="10">
+<tr>
+
+<td width="33%" align="center">
+
+<img
+src="./assets/frontend_stack.svg"
+width="100%"
+loading="lazy"
+decoding="async"
+alt="Frontend Technology Stack"
+/>
+
+</td>
+
+<td width="33%" align="center">
+
+<img
+src="./assets/backend_stack.svg"
+width="100%"
+loading="lazy"
+decoding="async"
+alt="Backend Technology Stack"
+/>
+
+</td>
+
+<td width="33%" align="center">
+
+<img
+src="./assets/devops_stack.svg"
+width="100%"
+loading="lazy"
+decoding="async"
+alt="DevOps Technology Stack"
+/>
+
+</td>
+
+</tr>
 </table>
 
-<br>
-
-<!-- Typing Subtitle matching Neon Themes -->
-<img src="https://readme-typing-svg.demolab.com?font=Outfit&weight=700&size=22&duration=3000&pause=1000&color=7DCFFF&center=true&vCenter=true&width=650&height=40&lines=FULL-STACK+ENGINEER;CREATIVE+UI%2FUX+DESIGNER;DEVOPS+%26+SYSTEMS+ARCHITECT" alt="Typing Subtitle" />
+<img
+src="https://readme-typing-svg.demolab.com?font=Outfit&weight=700&size=22&duration=3000&pause=1000&color=7DCFFF&center=true&vCenter=true&width=700&height=40&lines=FULL-STACK+ENGINEER;CREATIVE+UI%2FUX+DESIGNER;DEVOPS+%26+SYSTEMS+ARCHITECT"
+alt="Typing Animation"
+/>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=gitbyg4v&label=SYSTEM_VIEWS&color=7dcfff&style=flat-square" alt="Views"/>
-  <img src="https://img.shields.io/github/followers/gitbyg4v?label=SUBSCRIBERS&style=flat-square&color=bb9af7&logo=github" alt="Followers"/>
-  <img src="https://img.shields.io/badge/STATUS-Active_Open_To_Work-9ece6a?style=flat-square" alt="Status"/>
+
+<img src="https://komarev.com/ghpvc/?username=gitbyg4v&label=SYSTEM_VIEWS&color=7dcfff&style=flat-square" alt="Views"/>
+
+<img src="https://img.shields.io/github/followers/gitbyg4v?label=FOLLOWERS&style=flat-square&color=bb9af7&logo=github" alt="Followers"/>
+
+<img src="https://img.shields.io/badge/STATUS-OPEN_TO_WORK-9ece6a?style=flat-square" alt="Status"/>
+
 </p>
 
 </div>
 
 ---
 
-### 💻 SYSTEM DIAGNOSTICS & TELEMETRY
+# SYSTEM DIAGNOSTICS
 
-> **[!] SECURE SHELL ESTABLISHED**
-> *   **Primary Core:** Full-Stack Web Development, Responsive UI/UX Design, and cloud deployments.
-> *   **Secondary Core:** High-Performance automation, custom vector graphic scripting, and infrastructure orchestration.
+> **SECURE CONNECTION ESTABLISHED**
+
+### Primary Core
+
+- 🌐 Full-Stack Web Development
+- 🎨 Responsive UI / UX Design
+- ☁️ Cloud Deployments
+- ⚡ Performance Optimization
+
+### Secondary Core
+
+- 🤖 Automation Engineering
+- 🧩 Vector Graphics & SVG Systems
+- 🛠 Infrastructure Orchestration
+- 🚀 DevOps Workflows
 
 ---
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/g4v" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="g4v" height="30" width="40" /></a>
-<a href="https://www.behance.net/g4v" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg" alt="g4v" height="30" width="40" /></a>
-</p>
+<h3 align="center">Connect With Me</h3>
 
+<p align="center">
+
+<a href="https://linkedin.com/in/g4v" target="_blank">
+<img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" width="42" height="42" alt="LinkedIn"/>
+</a>
+
+<a href="https://www.behance.net/g4v" target="_blank">
+<img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg" width="42" height="42" alt="Behance"/>
+</a>
+
+</p>
