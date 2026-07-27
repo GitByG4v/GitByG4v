@@ -1,4 +1,3 @@
-# 🛰️ SYSTEM INITIALIZED // USER: GAVASKAR
 
 <div align="center">
 
@@ -6,17 +5,11 @@
 <img src="./assets/hud_card.svg" width="100%" alt="Gavaskar Holographic AR HUD Card"/>
 
 <br>
+- 👨‍💻 All of my projects are available at [https://gitbyg4v.github.io/Portfolio/](https://gitbyg4v.github.io/Portfolio/)
 
+- 📫 How to reach me **g4v.dev@gmail.com**
 <!-- Futuristic HUD Modular Dashboard Widgets -->
 <table width="100%" border="0" cellpadding="4" cellspacing="6">
-  <tr>
-    <td colspan="2" width="67%" align="center" valign="top">
-      <img src="./assets/commits_heatmap.svg" width="100%" alt="Commit Frequency Heatmap" />
-    </td>
-    <td width="33%" align="center" valign="top">
-      <img src="./assets/git_stats.svg" width="100%" alt="Git Stats" />
-    </td>
-  </tr>
   <tr>
     <td width="33%" align="center" valign="top">
       <img src="./assets/frontend_stack.svg" width="100%" alt="Frontend Stack" />
@@ -28,17 +21,7 @@
       <img src="./assets/devops_stack.svg" width="100%" alt="DevOps Stack" />
     </td>
   </tr>
-  <tr>
-    <td width="33%" align="center" valign="top">
-      <img src="./assets/followers_stars.svg" width="100%" alt="Network & Followers" />
-    </td>
-    <td width="33%" align="center" valign="top">
-      <img src="./assets/calendar.svg" width="100%" alt="Contribution Calendar" />
-    </td>
-    <td width="33%" align="center" valign="top">
-      <img src="./assets/velocity_score.svg" width="100%" alt="Velocity & Achievements" />
-    </td>
-  </tr>
+  
   <tr>
     <td colspan="3" width="100%" align="center" valign="top">
       <img src="./assets/activity_trend.svg" width="100%" alt="Activity Trend Graph" />
@@ -96,22 +79,15 @@ func main() {
 
 ---
 
-### 👾 CONTRIB LEVEL // GRID SIMULATOR
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+<a href="https://linkedin.com/in/g4v" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="g4v" height="30" width="40" /></a>
+<a href="https://www.behance.net/g4v" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg" alt="g4v" height="30" width="40" /></a>
+</p>
 
-<div align="center">
-<img src="https://raw.githubusercontent.com/gitbyg4v/gitbyg4v/output/github-contribution-grid-snake.svg" width="100%" alt="Contribution Snake"/>
-</div>
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=gitbyg4v&show_icons=true&locale=en&layout=compact" alt="gitbyg4v" /></p>
 
----
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=gitbyg4v&show_icons=true&locale=en" alt="gitbyg4v" /></p>
 
-### 📡 COMMUNICATION CHANNELS
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=gitbyg4v&" alt="gitbyg4v" /></p>
 
-<div align="center">
-
-[LinkedIn](https://linkedin.com/in/g4v) • [Gmail](mailto:g4v.dev@gmail.com) • [Interactive Portfolio](https://gitbyg4v.github.io/Portfolio/)
-
-<br>
-
-<img src="https://capsule-render.vercel.app/api?type=slice&color=0:7dcfff,50:bb9af7,100:f7768e&height=100&section=footer" width="100%" alt="Footer spacer"/>
-
-</div>
